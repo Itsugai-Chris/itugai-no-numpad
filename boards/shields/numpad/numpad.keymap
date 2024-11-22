@@ -19,7 +19,7 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-        default_layer {
+        default {
             bindings = <
                 &kp KP_NUM &kp KP_DIVIDE &kp KP_MULTIPLY &kp KP_MINUS
                 &kp KP_N7  &kp KP_N8     &kp KP_N9       &kp KP_PLUS
