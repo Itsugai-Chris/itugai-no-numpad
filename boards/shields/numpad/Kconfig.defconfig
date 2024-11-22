@@ -1,0 +1,6 @@
+if numpad
+
+config ZMK_KEYBOARD_NAME
+    default "numpad"
+
+endif
