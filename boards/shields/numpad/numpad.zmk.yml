@@ -2,7 +2,7 @@ file_format: "1"
 id: numpad
 name: Numpad
 type: shield
-url: https://github.com/istugaichris/my-shield-module.git
+url: https://github.com/Itsugai-Chris/itugai-no-numpad.git
 requires: [seeeduino_xiao_ble]
 features:
   - keys
