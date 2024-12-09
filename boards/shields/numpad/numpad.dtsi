@@ -33,6 +33,7 @@
         full-ohms = <(510000 + 1000000)>;
         power-gpios = <&gpio0 14 (GPIO_OPEN_DRAIN | GPIO_ACTIVE_LOW)>;
     };
+};
 
     &gpio0 {
         fastbatcharge: fast-battery-charge {
@@ -42,4 +43,4 @@
         line-name = "Fast Battery Charge";
         };
     };
-};
+    
