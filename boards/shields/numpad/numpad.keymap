@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &lt {
-  quick-tap-ms = <200>;
+  quick-tap-ms = <1000>;
 };
 
         // ┌───┬───┬───┬───┐
@@ -34,9 +34,9 @@
         function_layer {
             bindings = <
                 &trans          &trans          &trans          &trans
-                &trans          &trans          &trans          &trans
+                &trans          &trans          &trans          &bootloader
                 &out OUT_USB    &out OUT_BLE    &trans
-                &bt BT_PRV      &bt BT_NXT      &trans          &sys_reset
+                &bt BT_PRV      &bt BT_NXT      &bt BT_CLR_ALL  &sys_reset
                 &bt BT_CLR                      &trans
             >;
         };
