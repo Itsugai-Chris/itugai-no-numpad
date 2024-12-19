@@ -18,6 +18,18 @@
         // ├───┴───┼───┤   │
         // │ 0     │ . │   │
         // └───────┴───┴───┘
+        
+        // ┌───┬───┬───┬───┐
+        // │Esc│   │   │   │
+        // ├───┼───┼───┼───┤
+        // │BS │ ↑ │Del│   │
+        // ├───┼───┼───┤   │
+        // │ ← │ ↓ │ → │   │
+        // ├───┼───┼───┼───┤
+        // │   │   │   │Tab│
+        // ├───┴───┼───┤   │
+        // │       │   │   │
+        // └───────┴───┴───┘
 
 / {
     keymap {
@@ -28,10 +40,21 @@
                 &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp KP_PLUS
                 &kp KP_N4       &kp KP_N5       &kp KP_N6
                 &kp KP_N1       &kp KP_N2       &kp KP_N3       &kp KP_ENTER
-                &kp KP_N0                       &lt 1 KP_DOT
+                &lt 1 KP_N0                     &lt 2 KP_DOT
             >;
         };
+        
         function_layer {
+            bindings = <
+                &kp esc         &trans          &trans          &trans
+                &kp BACKSPACE   &kp UP          &kp DELETE      &trans
+                &kp LEFT        &kp DOWN        &kp RIGHT
+                &trans          &trans          &trans          &trans
+                &trans                          &trans
+            >;
+        };
+
+        BT_layer {
             bindings = <
                 &trans          &trans          &trans          &trans
                 &trans          &trans          &trans          &trans
