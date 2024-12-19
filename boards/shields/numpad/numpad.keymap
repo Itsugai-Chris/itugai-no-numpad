@@ -46,12 +46,12 @@
         
         function_layer {
             bindings = <
-                &kp esc         &trans          &trans          &trans
+                &kp ESC         &trans          &trans          &trans
                 &kp BACKSPACE   &kp UP          &kp DELETE      &trans
                 &kp LEFT        &kp DOWN        &kp RIGHT
                 &trans          &trans          &trans          &trans
                 &trans                          &trans
-            >;
+            >; 
         };
 
         BT_layer {
