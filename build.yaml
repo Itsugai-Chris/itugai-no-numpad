@@ -20,6 +20,6 @@
 include:
   - board: seeeduino_xiao_ble
     shield: numpad
-    snippet: zmk-usb-logging studio-rpc-usb-uart
+    snippet: zmk-usb-logging
   - board: seeeduino_xiao_ble
     shield: settings_reset
